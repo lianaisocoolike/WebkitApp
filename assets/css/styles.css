@@ -1,0 +1,2440 @@
+/*   
+ * Template Name: Appkit Landing - Responsive Website Template for Developers
+ * Version: 1.0
+ * Author: Xiaoying Riley
+ * Website: http://themes.3rdwavemedia.com/
+ * Twitter: @3rdwave_themes
+* License: Creative Commons Attribution 3.0 License
+*/
+/* Theme default */
+body {
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #494d55;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+a {
+  color: #3aa7aa;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #339597;
+}
+a:active {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+.btn,
+a.btn {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.btn .fa,
+a.btn .fa {
+  margin-right: 5px;
+}
+.btn-cta,
+a.btn-cta {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 30px;
+}
+.btn-primary {
+  background: #40babd;
+  border: 1px solid #40babd;
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.hover {
+  background: #3aa7aa;
+  color: #fff;
+  border: 1px solid #3aa7aa;
+}
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.carousel-indicators {
+  bottom: 30px;
+  margin-bottom: 0;
+}
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  margin-right: 5px;
+}
+.carousel-indicators li.active {
+  background-color: #40babd;
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  margin-right: 5px;
+}
+/* ======= Header ======= */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+  height: 60px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+.header.header-scrolled {
+  background: #fff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.header.header-scrolled a {
+  color: #494d55;
+}
+.header.header-scrolled .logo {
+  color: #40babd;
+  padding-top: 12px;
+}
+.header.header-scrolled .logo .logo-icon-wrapper {
+  background: #40babd;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  text-align: center;
+}
+.header.header-scrolled .logo .logo-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0;
+}
+.header.header-scrolled .main-nav .nav .nav-item a {
+  color: #a2a6af;
+}
+.header.header-scrolled .main-nav .nav .nav-item.active a {
+  color: #494d55;
+  border-bottom: 4px solid #40babd;
+}
+.header a {
+  color: #fff;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+.header a:hover {
+  text-decoration: none;
+}
+.header .logo {
+  margin: 0;
+  display: inline-block;
+  float: left;
+  font-size: 28px;
+  padding-top: 15px;
+}
+.header .logo .logo-icon-wrapper {
+  margin-right: 3px;
+  position: relative;
+  display: inline-block;
+  top: -3px;
+}
+.header .logo .logo-icon {
+  width: 30px;
+  height: 30px;
+}
+.header .logo .highlight {
+  font-weight: 800;
+}
+.main-nav {
+  margin-top: 6px;
+}
+.main-nav .navbar-toggle {
+  margin-right: 0;
+  margin-top: 0;
+  background: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #26282c;
+}
+.main-nav .navbar-toggle:focus {
+  outline: none;
+}
+.main-nav .navbar-toggle .icon-bar {
+  background-color: #fff;
+  height: 3px;
+}
+.main-nav .navbar-toggle:hover .icon-bar {
+  background-color: #fff;
+}
+.main-nav .nav .nav-item {
+  font-weight: normal;
+  font-size: 14px;
+  margin-right: 25px;
+}
+.main-nav .nav .nav-item.active a {
+  background: none;
+  color: #fff;
+}
+.main-nav .nav .nav-item a {
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+}
+.main-nav .nav .nav-item a:hover {
+  color: #fff;
+  background: none;
+}
+.main-nav .nav .nav-item a:focus {
+  outline: none;
+  background: none;
+}
+.main-nav .nav .nav-item a:active {
+  outline: none;
+  background: none;
+}
+.main-nav .nav .nav-item:last-child {
+  margin-right: 0;
+}
+.main-nav .nav.active {
+  position: relative;
+}
+.nav > li > a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* ====== Footer ====== */
+.footer {
+  background: #26282c;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 0;
+}
+.footer a {
+  color: #40babd;
+}
+.footer .fa-heart {
+  color: #EA5395;
+}
+/* ======= Hero Section ======= */
+.hero-section {
+  min-height: 560px;
+  background: #494d55;
+  position: relative;
+}
+.hero-section .figure-holder-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-section .figure-holder {
+  position: relative;
+  height: 560px;
+}
+.hero-section .figure-holder .figure-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.hero-carousel {
+  height: 560px;
+  color: #fff;
+}
+.hero-carousel .carousel-inner .item {
+  height: 560px;
+  background-position: center center;
+}
+.hero-carousel .carousel-inner .item-1 {
+  background-image: url('../images/hero-1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .item-2 {
+  background-image: url('../images/hero-2.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .item-3 {
+  background-image: url('../images/hero-3.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .heading {
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.hero-carousel .carousel-inner .intro {
+  font-size: 18px;
+}
+.hero-carousel .carousel-inner .intro + .btn {
+  margin-top: 15px;
+}
+/* ======= About Section ======= */
+.about-section {
+  padding-top: 90px;
+}
+.about-section .section-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 300;
+}
+.about-section .intro {
+  color: #a2a6af;
+  font-size: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.about-section .items-wrapper {
+  margin-bottom: 60px;
+}
+.about-section .items-wrapper .figure-holder {
+  min-height: 170px;
+  margin-bottom: 15px;
+  vertical-align: bottom;
+}
+.about-section .items-wrapper .item-inner {
+  padding: 30px;
+}
+.about-section .items-wrapper .item-title {
+  color: #40babd;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.about-section .items-wrapper .item-desc {
+  color: #616670;
+}
+.technologies {
+  margin-bottom: 90px;
+}
+.technologies li {
+  margin-right: 10px;
+}
+.technologies li:last-child {
+  margin-right: 0;
+}
+.testimonials {
+  background: #40babd;
+}
+.testimonials-inner {
+  padding: 60px 30px;
+  position: relative;
+  max-width: 800px;
+}
+.testimonials-inner .profile-holder {
+  position: absolute;
+  left: 30px;
+  text-align: center;
+}
+.testimonials-inner .profile-image {
+  display: inline-block;
+  margin: 0 auto;
+}
+.testimonials-inner .quote {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  margin-left: 130px;
+  border-left: none;
+  margin-bottom: 0;
+  font-size: 14px;
+  min-height: 100px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: relative;
+  padding: 15px;
+}
+.testimonials-inner .quote:before {
+  position: absolute;
+  left: -10px;
+  top: 30px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgba(0, 0, 0, 0.2);
+}
+/* ======= Testimonials Section ======= */
+.testimonials-section {
+  background: #40babd url('../images/map.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.testimonials-section .section-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 300;
+  color: #fff;
+}
+.testimonials-section .item {
+  position: relative;
+  max-width: 800px;
+  padding: 30px;
+}
+.testimonials-section .item:last-child {
+  margin-bottom: 0;
+}
+.testimonials-section .item.item-reversed .profile-holder {
+  left: inherit;
+  right: 30px;
+}
+.testimonials-section .item.item-reversed .quote {
+  margin-left: 0;
+  margin-right: 105px;
+}
+.testimonials-section .item.item-reversed .quote:before {
+  left: inherit;
+  right: -10px;
+  content: "";
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid rgba(0, 0, 0, 0.2);
+  border-right: inherit;
+}
+.testimonials-section .item .profile-holder {
+  position: absolute;
+  left: 30px;
+  text-align: center;
+}
+.testimonials-section .item .profile-image {
+  display: inline-block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+}
+.testimonials-section .item .quote {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  margin-left: 105px;
+  border-left: none;
+  margin-bottom: 0;
+  font-size: 14px;
+  min-height: 80px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: relative;
+  padding: 30px;
+}
+.testimonials-section .item .quote:before {
+  position: absolute;
+  left: -10px;
+  top: 30px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgba(0, 0, 0, 0.2);
+}
+.testimonials-section .item .quote-source {
+  color: rgba(0, 0, 0, 0.6);
+}
+/* ======= Features Section ======= */
+.features-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.features-section .section-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 300;
+}
+.features-section .intro {
+  color: #a2a6af;
+  font-size: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.feature-nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.feature-nav > li {
+  position: relative;
+}
+.feature-nav > li .fa {
+  margin-right: 5px;
+}
+.feature-nav > li.active > a {
+  color: #40babd;
+  background: none;
+  padding: 8px 0;
+}
+.feature-nav > li > a {
+  background: none;
+  padding: 8px 0;
+  color: #616670;
+}
+.feature-nav > li > a:hover {
+  background: none;
+  color: #40babd;
+}
+/* ======= Pricing Section ======= */
+.pricing-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.pricing-section .section-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 300;
+}
+.pricing-section .intro {
+  color: #a2a6af;
+  font-size: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.pricing-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.pricing-wrapper .item {
+  margin-bottom: 30px;
+}
+.pricing-wrapper .item-inner {
+  color: #fff;
+  padding: 30px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #40babd;
+  min-height: 390px;
+}
+.pricing-wrapper .item-inner a {
+  color: rgba(0, 0, 0, 0.4);
+}
+.pricing-wrapper .item-1 .item-inner {
+  background: #75c181;
+}
+.pricing-wrapper .item-2 .item-inner {
+  background: #58bbee;
+}
+.pricing-wrapper .item-3 .item-inner {
+  background: #F8A13F;
+}
+.pricing-wrapper .item-heading {
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+  min-height: 60px;
+}
+.pricing-wrapper .price-figure {
+  font-size: 46px;
+  margin-bottom: 15px;
+}
+.pricing-wrapper .price-figure .currency {
+  vertical-align: super;
+  font-size: 26px;
+  -webkit-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+.pricing-wrapper .price-figure .number {
+  font-weight: 500;
+}
+.pricing-wrapper .price-desc {
+  margin-bottom: 30px;
+  min-height: 120px;
+}
+.pricing-wrapper a.btn {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.pricing-wrapper a.btn:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+/* ======= Team Section ======= */
+.team-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: #f5f5f5;
+}
+.team-section .section-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 300;
+}
+.team-section .intro {
+  color: #a2a6af;
+  font-size: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.team-section .story {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  max-width: 800px;
+}
+.team-section .profile-image {
+  width: 120px;
+  height: 120px;
+}
+.team-section .members-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.team-section .item-inner {
+  padding: 30px;
+  background: #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.team-section .member-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #40babd;
+}
+.team-section .member-title {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #616670;
+}
+.team-section .social {
+  margin-bottom: 30px;
+}
+.team-section .social a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #40babd;
+  padding-top: 4px;
+  color: #fff;
+}
+.team-section .social a.google {
+  background: #dd4b39;
+}
+.team-section .social a.google:hover {
+  background: #d73925;
+}
+.team-section .social a.twitter {
+  background: #55acee;
+}
+.team-section .social a.twitter:hover {
+  background: #3ea1ec;
+}
+.team-section .social a.facebook {
+  background: #3b5998;
+}
+.team-section .social a.facebook:hover {
+  background: #344e86;
+}
+.team-section .social a.linkedin {
+  background: #1E6FBA;
+}
+.team-section .social a.linkedin:hover {
+  background: #1a62a4;
+}
+.team-section .social a.github {
+  background: #444;
+}
+.team-section .social a.github:hover {
+  background: #373737;
+}
+.team-section .social a.dribbble {
+  background: #EC4D8B;
+}
+.team-section .social a.dribbble:hover {
+  background: #ea367c;
+}
+.team-section .member-desc {
+  color: #616670;
+}
+/* ======= Contact Section ======= */
+.contact-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: #494d55 url('../images/map.png') no-repeat center center;
+  color: #fff;
+}
+.contact-section .section-title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    border-top: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    position: absolute;
+    background: #26282c;
+    z-index: 40;
+  }
+  .header .main-nav .navbar-collapse .nav-item.active a {
+    color: #40babd;
+  }
+  .header.header-scrolled .main-nav .navbar-collapse .nav-item.active a {
+    border: none;
+    color: #40babd;
+  }
+  .main-nav .navbar-collapse .nav-item {
+    margin-right: 0;
+  }
+  .main-nav .navbar-collapse .nav-item a {
+    text-align: center;
+  }
+  .pricing-wrapper .item-inner {
+    min-height: inherit;
+  }
+  .pricing-wrapper .price-desc {
+    min-height: inherit;
+  }
+  .hero-section .figure-image {
+    width: 300px;
+  }
+  .hero-carousel .carousel-inner .heading {
+    font-size: 26px;
+  }
+  .hero-carousel .carousel-inner .item-content-inner {
+    padding-top: 100px;
+  }
+  .hero-section .figure-holder .figure-image {
+    width: inherit;
+    bottom: 0;
+    top: inherit;
+    right: inherit;
+    left: 15px;
+    max-width: 320px;
+  }
+  .technologies li {
+    margin-bottom: 15px;
+  }
+  .members-wrapper .item {
+    margin-bottom: 30px;
+  }
+  .members-wrapper .item:last-child {
+    margin-bottom: 0;
+  }
+  .hero-carousel {
+    height: 660px;
+  }
+  .hero-section .carousel-inner {
+    height: 660px;
+  }
+  .hero-carousel .carousel-inner .item {
+    height: 660px;
+  }
+  .testimonials-section .item .profile-image {
+    width: 60px;
+    height: 60px;
+  }
+  .testimonials-section .item .quote {
+    margin-left: 85px;
+    padding: 15px;
+  }
+  .testimonials-section .item.item-reversed .quote {
+    margin-right: 85px;
+  }
+  .team-section .item-inner {
+    min-height: inherit;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .feature-nav {
+    text-align: left;
+    padding-left: 30px;
+  }
+  .feature-nav > li {
+    font-size: 15px;
+  }
+  .hero-section .figure-holder .figure-image {
+    width: 400px;
+    bottom: inherit;
+    top: 130px;
+  }
+  .hero-carousel .carousel-inner .item-content-inner {
+    max-width: 300px;
+    padding-top: 120px;
+  }
+  .team-section .item-inner {
+    min-height: 515px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .feature-nav {
+    margin-top: 30px;
+    padding-left: 15px;
+  }
+  .feature-nav > li {
+    font-size: 16px;
+  }
+  .feature-nav > li > a {
+    padding: 15px 0;
+  }
+  .feature-nav > li.active > a {
+    padding: 15px 0;
+  }
+  .hero-section .figure-holder .figure-image {
+    width: 420px;
+    bottom: inherit;
+    top: 130px;
+  }
+  .hero-carousel .carousel-inner .item-content-inner {
+    max-width: 500px;
+  }
+  .team-section .item-inner {
+    min-height: 490px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .hero-section .figure-holder .figure-image {
+    width: 570px;
+    bottom: 0;
+    top: inherit;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+/*
+ * Keyboard Icons
+ */
+:not(#INDdummy).INDkeyboardIcon {
+  white-space:                nowrap;
+}
+:not(#INDdummy).INDkeyboardIcon kbd {
+/*
+  border:                     none;
+  border-radius:              0.1em;
+  box-shadow:                 0.1em -0.1em 0 0.1em #ddd,
+                             -0.1em  0.1em 0 0.1em #aaa,
+                              0      0     0 0.2em #bbb;
+*/
+  border:                     0.2em solid;
+  border-radius:              0.3em;
+  border-color:               #ddd #bbb #777 #999;
+  background-color:           White !important;
+  background-image:           linear-gradient(to bottom left, #eee, #fff, #eee);
+  padding:                    0.1em 0.3em;
+  color:                      Black !important;
+  font-family:                Arial, sans-serif;
+  font-size:                  0.85em;
+  font-weight:                normal;
+}
+/*
+:not(#INDdummy).INDkeyboardIcon kbd, :not(#INDdummy).INDkeyboardIcon kbd * {
+  font-family:                Arial, sans-serif;
+  font-size:                  1em;
+  font-weight:                normal;
+}
+*/
+
+
+
+/*
+ * Tooltips
+ */
+:not(#INDdummy).INDtooltip {
+  z-index:                    2147483640;
+}
+:not(#INDdummy).INDtooltip ol,
+:not(#INDdummy).INDtooltip ul,
+:not(#INDdummy).INDtooltip dl {
+  font-size:                  smaller;
+  margin-bottom:              20px;
+  min-width:                  192px;
+  margin-right:               12px;
+}
+:not(#INDdummy).INDtooltip li {
+  margin:                     5px 0;
+}
+:not(#INDdummy).INDtooltip ul,
+:not(#INDdummy).INDtooltip ul li {
+  list-style-type:            square;
+}
+
+:not(#INDdummy).INDdatepickerTip table {
+  min-width:                  260px;
+}
+:not(#INDdummy).INDdatepickerTip table,
+:not(#INDdummy).INDdatepickerTip table * {
+  text-align:                 right;
+}
+:not(#INDdummy).INDdatepickerTip th {
+  color:                      LightYellow;
+  text-decoration:            underline;
+  line-height:                32px;
+  float:                      right;
+}
+:not(#INDdummy).INDmonochrome .INDdatepickerTip td {
+  color:                      White;
+}
+:not(#INDdummy).INDdatepickerTip td,
+:not(#INDdummy).INDdatepickerTip th {
+  font-size:                  smaller;
+}
+:not(#INDdummy).INDdatepickerTip td {
+  margin-right:               12px;
+  padding:                    5px;
+  float:                      left;
+}
+
+
+
+/*
+ * Shortcut Menu
+ */
+#INDshortcutMenu {
+  position:                   fixed;
+  top:                        0;
+  right:            342px;
+  margin-top:                 -1px;
+  background:                 White;
+  background-clip:            padding-box;
+  border:                     5px solid #122231;
+  border:                     5px solid rgba( 18, 34, 49, 0.7 );
+  border-radius:              0 0 8px 8px;
+  box-shadow:                 0px 0px 1px 1px White;
+  letter-spacing:             0.7px;
+  z-index:                    2147483640;
+}
+
+#INDshortcutMenu ul,
+#INDshortcutMenu li {
+  list-style:                 none                             !important;
+  background-image:           none                             !important;
+  margin:                     0                                !important;
+  padding:                    0                                !important;
+}
+#INDshortcutMenu li {
+  float:                      right !important;
+}
+
+#INDshortcutMenu a {
+  padding:                    4px 12px                         !important;
+  display:                    inline-block                     !important;
+  text-decoration:            none                             !important;
+  border-radius:              5px                              !important;
+  border:                     1px solid transparent            !important;
+}
+#INDshortcutMenu a:hover {
+  background:                 #ddeeff !important;
+  border:                     1px solid #75baff                !important;
+}
+#INDshortcutMenu a span {
+  color:                      #17384c  !important;
+  font-family:                Arial, Helvetica, sans-serif     !important;
+  font-size:                  15px                             !important;
+}
+
+
+
+/*
+ * Disabled Popup
+ */
+#INDdisabledPopup {
+  position:                   fixed;
+  top:                        0;
+  right:            0;
+  background:                 White;
+  padding:                    4px 27px;
+  width:                      400px;
+  visibility:                 visible;
+  border:                      4px solid #17384c;
+  border-top:                 23px solid #17384c;
+  border-bottom:              13px solid #17384c;
+  border-radius:              4px;
+  z-index:                    1000;
+  transition:                 top        400ms ease-in,
+                              visibility 400ms ease-in;
+  -webkit-box-sizing:         border-box;
+     -moz-box-sizing:         border-box;
+          box-sizing:         border-box;
+}
+#INDdisabledPopup[aria-hidden="true"] {
+  top:                        -220px;
+  visibility:                 hidden;
+  
+}
+#INDdisabledPopup span {
+  font-family:                Arial, Helvetica, sans-serif;
+  font-weight:                500;
+  font-size:                  21px;
+  color:                      #444;
+  line-height:                1.6;
+}
+@media screen and (max-width: 360px) {
+  #INDdisabledPopup {
+    width:                  100%;
+  }
+}/* close max-width 348px */
+
+
+
+/*
+ * Feedback/Statement Popup
+ */
+#INDpopup {
+  position:                   fixed;
+  top:                        0;
+  right:                      0;
+  bottom:                     0;
+  left:                       0;
+  background:                 rgba(0, 0, 0, 0.7);
+  z-index:                    1000;
+  opacity:                    1;
+  pointer-events:             auto;
+  transition:                 opacity 400ms ease-in;
+}
+#INDpopup[aria-hidden="true"] {
+  opacity:                    0;
+  pointer-events:             none;
+}
+#INDpopup > div {
+  display:                    flex;
+  flex-direction:             column;
+  position:                   fixed;
+  width:                      660px;
+  height:                     540px;
+  top:                        calc( ( 100vh - 540px ) / 2 );
+  left:                       calc( 50% - 330px );
+  background:                 White;
+  border:                     0px solid #888;
+  border-radius:              10px;
+  padding:                    12px 12px 44px;
+  background-color:           #17384c;
+  -webkit-box-sizing:         border-box;
+     -moz-box-sizing:         border-box;
+          box-sizing:         border-box;
+}
+#INDpopup .INDiframeWrap {
+  flex-grow:                  1;
+  box-sizing:                 border-box;
+  width:                      100%;
+  height:                     100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-y:                 hidden;
+}
+
+#INDpopup > div .INDpopupClose {
+  color:                      White;
+  font-weight:                700;
+  position:                   absolute;
+  top:                        6px;
+  left:                       13px;
+  font-size:                  22px;
+  display:                    inline-block;
+  width:                      auto;
+  background:                 none;
+  border:                     none;
+  padding:                    0;
+  margin:                     0;
+  cursor:                     pointer;
+  font-family:                Open Sans Hebrew,Arial,Helvetica,sans-serif;
+  width:                      17px;
+  height:                     21px;
+  text-align:                 center;
+  line-height:                1em;
+  vertical-align:             top;
+}
+#INDpopup > div h2 {
+  color:                      White;
+  font-size:                  22px;
+  text-align:                 center;
+  margin:                     0;
+  padding:                    10px 0 20px;
+  line-height:                1.1em;
+  font-weight:                400;
+  text-align:                 center;
+  height:                     auto;
+  width:                      100%;
+  position:                   static;
+  font-family:                Open Sans Hebrew,Arial,Helvetica,sans-serif;
+}
+#INDpopup iframe {
+  width:                      100%;
+  height:                     100%;
+  height:                     calc( 100% - 10px );
+  border:                     0px solid #ddd;
+  background:                 none !important;
+  -webkit-box-sizing:         border-box;
+     -moz-box-sizing:         border-box;
+          box-sizing:         border-box;
+  border-radius:              10px;
+  overflow:                   hidden;
+}
+#INDpopup .INDpopupConfirm {
+  color:                      White;
+  font-size:                  18px;
+  width:                      auto;
+  height:                     auto;
+  padding:                    0;
+  border-radius:              0;
+  display:                    inline-block;
+  background:                 none;
+  border:                     none;
+  box-shadow:                 none;
+  cursor:                     pointer;
+  position:                   absolute;
+  bottom:                     7px;
+  left:                       8px;
+  font-family:                Open Sans Hebrew,Arial,Helvetica,sans-serif;
+}
+
+
+
+/* ---- Engish ---- */
+#INDWrap[lang=en] #INDpopup .INDpopupConfirm {
+  right:                      8px;
+  left:                       auto;
+}
+#INDWrap[lang=en] #INDpopup > div .INDpopupClose {
+  right:                      13px;
+  left:                       auto;
+}
+
+
+
+/************************
+ * ---- Responsive ---- *
+ ************************/
+@media screen and (max-width: 800px) {
+  #INDpopup > div {
+    width:                  100%;
+    height:                 100%;
+    top:                    0;
+    right:                  0;
+    left:                   0;
+    border-radius:          0;
+  }
+  #INDWrap[lang=en] #INDpopup > div {
+    height:                 100%;
+  }
+}/* close max-width 800px */
+
+
+  #INDmenu {
+  width:              345px;
+  height:             100%;
+}
+#INDmenu * {
+  font-family:        Open Sans Hebrew, Arial, Helvetica, sans-serif !important;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height:        1.1em;
+  font-weight:        400;
+  padding:            0;
+  margin:             0;
+}
+#INDWrap #INDmenu {
+  right:    0;
+  visibility:         visible;
+  background:         White;
+  border:             none;
+  border-left: 4px solid #17384c !important;
+  border-color:       #17384c;
+  transition:         right 400ms ease-in,
+                      top             400ms ease-in,
+                      visibility      400ms ease-in;
+}
+#INDWrap #INDmenu[aria-hidden="true"] {
+  right:    -400px;
+  visibility:         hidden;
+}
+#INDmenu :focus {
+  outline:            rgb(77, 144, 254) solid 1px !important;
+  outline:            rgb(77, 144, 254) auto  1px !important;
+}
+#INDmenu .INDmenuIn {
+  display:            block;
+  width:              100%;
+  height:             100%;
+  position:           relative;
+}
+#INDmenu button {
+  border-radius:      0;
+}
+
+
+/* Header design */
+#INDmenu .INDmenuHeader {
+  position:           relative;
+  padding:            16px 0 14px 0;
+  width:              100%;
+  background-color:   #17384c;
+  text-align:         center;
+}
+#INDmenu .INDmenuHeader button {
+  display:            inline-block;
+  position:           absolute;
+  padding:            0;
+  top:                10px;
+  left:               10px;
+  width:              auto;
+  color:              White;
+  font-size:          22px;
+  font-weight:        700;
+
+}
+#INDmenu .INDmenuHeader button.flyingfocus_target * {
+  stroke:             black;
+}
+#INDmenu .INDmenuHeader h2 {
+  display:            inline-block;
+  position:           static;
+  float:              none;
+  margin:             0;
+  padding:            0;
+  height:             auto;
+  color:              White;
+  text-align:         center !important;
+  font-size:          18px;
+  font-weight:        400;
+  line-height:        1.1em;
+  letter-spacing:     0;
+  transform:          scaleY(1.1);
+}
+
+
+/* Body design */
+#INDmenu .INDmenuBody {
+  display:            block;
+  margin:             0 auto;
+  width:              94%;
+  overflow-y:         hidden;
+}
+#INDmenu .INDmenuBody .INDmenuRow {
+  display:            block;
+  padding:            6px 0;
+  border-bottom:      1px solid #d1d2d3;
+}
+#INDmenu .INDmenuBody .INDmenuRow.INDmenuRow9 {
+  border:             none;
+}
+/*
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup3,
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 {
+  padding:            10px 0;
+}
+*/
+#INDmenu .INDmenuBody .INDmenuRow:after ,
+#INDmenu .INDmenuFooter > :not(:last-child):after {
+  display:            block;
+  visibility:         hidden;
+  font-size:          0;
+  content:            " ";
+  clear:              both;
+  height:             0;
+}
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup3 {
+  display:            block;
+  width:              100%;
+}
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 {
+  display:            inline-block;
+  float:              right;
+  width:              66%;
+}
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 button {
+  display:            inline-block;
+  float:              right;
+  width:              calc(99%/2);
+  text-align:         center;
+}
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 ~ button {
+  display:            inline-block;
+  float:              right;
+  padding:            10px 0;
+  width:              calc(99%/3);
+  text-align:         center;
+}
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup3 button {
+  display:            inline-block;
+  float:              right;
+  width:              calc(99%/3);
+  text-align:         center;
+}
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 button span,
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 ~ button span,
+#INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup3 button span {
+  display:            block;
+  padding-top:        4px;
+  text-align:         center;
+}
+#INDmenu .INDmenuBody .INDmenuRow [role="group"] button {
+  border-left:        1px solid #d1d2d3;
+}
+#INDmenu .INDmenuBody .INDmenuRow [role="group"] button:nth-child(3n) {
+  border-left:        none;
+}
+#INDmenu .INDmenuBody .INDmenuRow.INDwithSmart button {
+  float:              right;
+  width:              calc(99%/2);
+  text-align:         center;
+}
+#INDmenu .INDmenuBody .INDmenuRow.INDwithSmart button:first-child {
+  border-left:        1px solid #d1d2d3;
+}
+#INDmenu .INDmenuBody .INDmenuRow.INDwithSmart button span {
+  display:            block;
+  text-align:         center;
+  padding-top:        4px;
+}
+#INDmenu button {
+  display:            block;
+  width:              100%;
+  min-width:          auto;
+  height:             auto;
+  margin:             0;
+  padding:            10px 0;
+  border:             none;
+  box-shadow:         none;
+  background:         none;
+  text-align:         right;
+  text-transform:     none;
+  cursor:             pointer;
+}
+#INDmenu button:first-child:last-child,
+#INDmenu .INDwithSmart button {
+  padding:            0 !important;
+  margin:             0 !important;
+}
+#INDmenu button span {
+  display:            inline-block;
+  vertical-align:     top;
+  padding-top:        14px;
+}
+
+#INDmenu button .INDsvgWrap {
+  display:            inline-block;
+  width:              40px;
+  height:             40px;
+  margin:             0 auto;
+  text-align:         center;
+  vertical-align:     middle;
+}
+#INDmenu button .INDsvgWrap svg {
+  display:            inline-block;
+  vertical-align:     middle;
+}
+
+/* Footer design */
+#INDmenu .INDmenuFooter {
+  position:           absolute;
+  bottom:             0;
+  right:              0;
+  width:              100%;
+  padding-top:        12px;
+  background-color:   White;
+  -webkit-box-shadow: 0 -4px 5px 0 rgba(0,0,0,0.2);
+          box-shadow: 0 -4px 5px 0 rgba(0,0,0,0.2);
+}
+#INDmenu .INDmenuFooter > :not(:last-child) {
+  text-align:         center;
+  margin-bottom:      13px;
+}
+#INDmenu .INDmenuFooter > :not(:last-child) button {
+  display:            inline-block;
+  float:              right;
+  margin:             0;
+  padding:            0;
+  width:              calc(99%/3);
+  text-align:         center;
+}
+#INDmenu .INDmenuFooter > :not(:last-child) button svg {
+  display:            inline-block;
+  width:              46px;
+  height:             46px;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  background-color:   #17384c;
+}
+#INDmenu .INDmenuFooter > :not(:last-child) button span {
+  display:            block;
+  text-align:         center;
+  font-size:          14px;
+}
+#INDmenu .INDmenuFooter > :last-child {
+  background-color:   #17384c;
+  padding:            11px 0;
+  width:              100%;
+  color:              White;
+  font-size:          13px;
+  font-weight:        400;
+  line-height:        1.1em;
+  text-align:         center;
+}
+#INDmenu .INDmenuFooter > :last-child a {
+  color:              White;
+  font-size:          13px;
+  font-weight:        400;
+  line-height:        1.1em;
+  text-decoration:    none;
+}
+#INDmenu .INDmenuFooter > :last-child a:hover {
+  text-decoration:    underline;
+}
+#INDmenu .INDmenuFooter > :last-child span {
+  display:            inline-block;
+  color:              White;
+  font-size:          13px;
+  font-weight:        400;
+  line-height:        1.1em;
+}
+#INDmenu .INDmenuFooter > :last-child span:before {
+  content:            "|";
+  margin:             0 5px;
+}
+#INDmenu .INDmenuFooter button svg circle {
+  fill:               #17384c;
+}
+
+/* Colors */
+#INDmenu .INDmenuRow button svg * {
+  fill:               #17384c;
+}
+#INDmenu .INDmenuRow button,
+#INDmenu .INDmenuRow button span {
+  color:              #17384c;
+  font-size:          14px;
+}
+/*
+#INDmenu .INDmenuRow button.INDdisabled svg * {
+  fill:               #bbb;
+}
+#INDmenu .INDmenuRow button.INDdisabled,
+#INDmenu .INDmenuRow button.INDdisabled span {
+  color:              #bbb;
+}
+*/
+#INDmenu .INDmenuBody button:hover,
+#INDmenu .INDmenuBody button:focus {
+  background:         #ddeeff;
+  border-radius:      5px !important;
+}
+
+#INDmenu .INDmenuFooter button span {
+  color:              #17384c !important;
+}
+
+#INDmenu .INDmenuFooter button:hover span,
+#INDmenu .INDmenuFooter button:focus span {
+  color:              Black !important;
+  background-color:   White;
+}
+
+#INDmenu button[aria-pressed="true"] span,
+#INDmenu button[aria-pressed="true"] svg *,
+#INDmenu button[aria-selected="true"] span,
+#INDmenu button[aria-selected="true"] svg * {
+  color:              #570000 !important;
+  fill:               #570000 !important;
+  font-weight:        bold !important;
+}
+
+/* -------------- */
+
+/*
+#INDmenu .INDmenuRow button svg {
+  width:              32px;
+  height:             32px;
+}
+#INDmenu button span {
+  padding-top:        9px;
+}
+*/
+
+#INDdemoNotif {
+  margin:             0       !important;
+  padding:            5px     !important;
+  font-size:          14px;
+  background:         #17384c;
+  -webkit-filter:     brightness(1.37) saturate(0.72);
+          filter:     brightness(1.37) saturate(0.72);
+}
+#INDdemoNotif div {
+  padding:            4px     !important;
+  color:              #bbb    !important;
+  /*
+  background:    #b4481d !important;
+  */
+  background:         #17384c;
+  -webkit-filter:     brightness(1.57) saturate(1.83) hue-rotate(-186deg);
+          filter:     brightness(1.57) saturate(1.83) hue-rotate(-186deg);
+  color:              #888    !important;
+  font-weight:        bold    !important;
+  line-height:        1.2     !important;
+  border-radius:      3px     !important;
+  text-shadow:        2px 2px #0c1f2a;
+}
+/*
+#INDmenu button:hover,
+#INDmenu button:focus {
+  
+}
+#INDmenu .INDmenuFooter button[data-indopt="feedback"] {
+  display:            none !important;
+}
+#INDmenu .INDmenuFooter button {
+  width:              50% !important;
+}
+*/
+
+
+
+/* ---- Engish ---- */
+#INDWrap[dir=ltr] #INDmenu button {
+  text-align:         left;
+}
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 button,
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup3 button,
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 ~ button,
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow.INDwithSmart button,
+#INDWrap[dir=ltr] #INDmenu .INDmenuFooter > :not(:last-child) button {
+  text-align:         center;
+}
+#INDWrap[dir=ltr] #INDmenu .INDmenuHeader button {
+  right:              10px;
+  left:               auto;
+}
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow.INDwithSmart button,
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2,
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 ~ button,
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 button,
+#INDWrap[dir=ltr] #INDmenu .INDmenuFooter > :not(:last-child) button,
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup3 button {
+  float:              left;
+}
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow.INDwithSmart button:first-child {
+  border-left:        0px solid #d1d2d3;
+  border-right:       1px solid #d1d2d3;
+}
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow [role="group"] button {
+  border-left:        none;
+  border-right:       1px solid #d1d2d3;
+}
+#INDWrap[dir=ltr] #INDmenu .INDmenuBody .INDmenuRow [role="group"] button:nth-child(3n) {
+  border:             none;
+}
+
+
+
+/************************
+ * ---- Partial ---- *
+ ************************/
+
+#INDmenu .INDmenuFooter > :not(:last-child) button:first-child:last-child {
+  float:              none !important;
+  width:              100%;
+}
+
+
+/************************
+ * ---- Languages ---- *
+ ************************/
+
+/* ---- Arabic ---- */
+#INDWrap[lang=ar] #INDmenu .INDmenuRow button,
+#INDmenu .INDmenuRow button span {
+  font-size:          15px;
+}
+
+/* ---- Russian ---- */
+#INDWrap[lang=ru] #INDmenu { width:370px; }
+
+/* ---- German ---- */
+#INDWrap[lang=de] #INDmenu { width:440px; }
+
+/* ---- Spanish ---- */
+#INDWrap[lang=es] #INDmenu { width:400px; }
+
+/* ---- French ---- */
+#INDWrap[lang=fr] #INDmenu { width:365px; }
+
+/* ---- Italian ---- */
+#INDWrap[lang=it] #INDmenu { width:365px; }
+
+
+/************************
+ * ---- Responsive ---- *
+ ************************/
+
+@media screen and (max-width: 1600px) {
+  #INDmenu .INDmenuFooter {
+    box-shadow:     none;
+    padding:        0;
+  }
+  #INDmenu .INDmenuFooter > :not(:last-child) {
+    margin:         0;
+    background:     #17384c;
+    -webkit-filter: brightness(1.37) saturate(0.72);
+            filter: brightness(1.37) saturate(0.72);
+    padding:        5px 0;
+  }
+  #INDmenu .INDmenuFooter > :not(:last-child) span {
+    color:          #bbb      !important;
+  }
+  #INDmenu .INDmenuFooter > :not(:last-child) button svg {
+    display:        none;
+  }
+  #INDmenu .INDmenuFooter > :not(:last-child) button span {
+    color:          White;
+    font-weight:    700;
+    padding:        5px 0;
+  }
+}/* close max-width 1600px */
+
+
+
+@media screen and (max-width: 800px) {
+  #INDmenu {
+    width:          60%       !important;
+  }
+}/* close max-width 800px */
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  #INDmenu {
+    width:          90%       !important;
+    top:            0;
+    background:     rgba(255,255,255,0.95) !important;
+  }
+  #INDWrap #INDmenu[aria-hidden="true"] {
+    top:            -100vh;
+  }
+  #INDmenu .INDmenuBody svg {
+    display:        none;
+  }
+  #INDmenu .INDmenuBody .INDmenuRow button span {
+    font-size:      16px      !important;
+  }
+  #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup3,
+  #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2,
+  #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 ~ button {
+    padding:        0;
+  }
+  #INDmenu .INDmenuBody .INDmenuRow {
+    padding:        10px 0;
+  }
+  #INDmenu button {
+    padding:        0;
+  }
+  #INDmenu button span {
+    padding:        8px 0     !important;
+  }
+  #INDmenu .INDmenuBody div[role="group"] .INDmenuRow:last-child {
+    border-bottom:  1px solid #d1d2d3;
+  }
+  #INDmenu .INDmenuBody .INDmenuRow:last-child {
+    border:         none;
+  }
+}/* close max-width 736px */
+
+@media screen and (max-width: 568px) {
+  #INDmenu button span {
+    padding:        4px 0 5px !important;
+  }
+  #INDWrap[lang=de] #INDmenu,
+  #INDWrap[lang=it] #INDmenu {
+    width:          80%       !important;
+  }
+  #INDmenu button[data-indopt="epilepsy"] span,
+  #INDmenu button[data-indopt="soundreder"] span {
+    padding-top:    12px      !important;
+  }
+}/* close max-width 568px */
+
+@media screen and (max-width: 480px) {
+  #INDmenu {
+    width:          75%       !important;
+  }
+}/* close max-width 480px */
+
+@media screen and (max-width: 414px) {
+  #INDmenu {
+    width:          100%      !important;
+    background:     rgba(255,255,255,0.95) !important;
+  }
+  #INDmenu svg {
+    display:        inline-block;
+  }
+  #INDmenu .INDmenuBody .INDmenuRow button span {
+    font-size:      14px      !important;
+  }
+  #INDmenu .INDmenuBody .INDmenuRow {
+    padding:        6px 0;
+  }
+  #INDmenu .INDmenuRow:nth-child(2) button span,
+  #INDmenu div[role="group"] .INDmenuRow button span {
+    display:        block;
+    padding-top:    4px;
+    text-align:     center;
+  }
+  #INDmenu {
+    width:          90%       !important;
+  }
+  #INDmenu button span {
+    padding:        1px 0 0   !important;
+  }
+  #INDmenu button[aria-pressed="true"] span,
+  #INDmenu button[aria-pressed="true"] svg *,
+  #INDmenu button[aria-selected="true"] span,
+  #INDmenu button[aria-selected="true"] svg * {
+    font-weight:    400       !important;
+  }
+  #INDmenu button[data-indopt="epilepsy"],
+  #INDmenu button[data-indopt="sound"],
+  #INDmenu button[data-indopt="soundreder"] {
+    text-align:     center    !important;
+  }
+  #INDmenu button[data-indopt="epilepsy"] span,
+  #INDmenu button[data-indopt="soundreder"] span {
+    padding-top:    4px       !important;
+  }
+  #INDWrap[lang=de] #INDmenu,
+  #INDWrap[lang=it] #INDmenu {
+    width:          90%       !important;
+  }
+}/* close max-width 414px */
+
+@media screen and (max-width: 360px) {
+  #INDmenu {
+    width:          92%       !important;
+  }
+  #INDWrap[lang=de] #INDmenu,
+  #INDWrap[lang=it] #INDmenu {
+    width:          95%       !important;
+  }
+}/* close max-width 360px */
+
+
+@media screen and (max-width: 320px) {
+  #INDmenu .INDmenuBody .INDmenuRow button span {
+    font-size:      13px      !important;
+  }
+  #INDmenu .INDmenuFooter > :not(:last-child) button span {
+    font-size:      13px      !important;
+  }
+  #INDWrap[lang=it] #INDmenu .INDmenuBody .INDmenuRow button span,
+  #INDWrap[lang=it] #INDmenu .INDmenuFooter > :not(:last-child) button span {
+    font-size:      12px      !important;
+  }
+}/* close max-width 320px */
+
+
+/* Mobile View */
+@media screen and (max-width: 667px) {
+  .INDMobile #INDmenu .INDmenuBody div[role="group"] {
+    width:          50%;
+    float:          right;
+    display:        inline-block;
+    border:         none !important;
+  }
+  .INDMobile #INDmenu .INDmenuBody > div[role="group"] + .INDmenuRow {
+    width:          50%;
+    display:        inline-block;
+    border:         none;
+    border-right:   1px solid #d1d2d3;
+    margin-bottom:  6px;
+    padding:        0;
+  }
+  .INDMobile #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup3 {
+    width:          100%;
+  }
+  .INDMobile #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 {
+    width:          66%;
+  }
+  .INDMobile #INDmenu .INDmenuBody > div[role="group"] + .INDmenuRow + .INDmenuRow {
+    border-top:     1px solid #d1d2d3;
+  }
+  .INDMobile #INDmenu .INDmenuBody div[role="group"] .INDmenuRow:last-child {
+    border-bottom:  none;
+    padding:        0;
+  }
+  .INDMobile .INDmenuBody {
+    padding-top:    10px !important;
+  }
+  .INDMobile #INDmenu button:first-child:last-child,
+  .INDMobile #INDmenu .INDwithSmart button {
+    text-align:     center;
+  }
+  .INDMobile #INDmenu button[data-indopt="epilepsy"] span,
+  .INDMobile #INDmenu button[data-indopt="soundreder"] span {
+    font-size:      14px   !important;
+    display:        block  !important;
+    padding-top:    4px    !important;
+    text-align:     center !important;
+  }
+}/* close max-width 667px */
+
+
+
+.INDMobile  #INDmenu .INDmenuBody div[role="group"] {
+  width:              100%;
+}
+.INDMobile  #INDmenu .INDmenuBody .INDmenuRow .INDmenuGroup2 {
+  width:              66%;
+}
+.INDMobile #INDmenu .INDmenuBody > div[role="group"] + .INDmenuRow {
+  width:              100%;
+  border-right:       none;
+  border-top:         1px solid #d1d2d3;
+}
+.INDMobile  #INDmenu button[data-indopt="epilepsy"] {
+  padding-top:        6px;
+}
+.INDMobile  #INDmenu  div[role="group"] .INDmenuRow.INDwithSmart {
+  padding:            6px 0 !important;
+}
+
+
+  
+/*==*==*==*==*==*==*==*==*
+ *     Accessibility     *
+ *==*==*==*==*==*==*==*==*/
+
+
+
+/* Show Hover */
+.INDDesktop.INDkeyboard   [tabindex]:not(.INDblock):hover,
+.INDDesktop.INDsoundreder [tabindex]:not(.INDblock):hover {
+  box-shadow:           0 0 6px 3px  Blue,
+                  0 0 2px #333 inset !important;
+}
+
+
+
+/* Block Navigation */
+.INDDesktop.INDkeyboard .INDblock:not(.INDdialog):not(#INDshortcutMenu):focus:before,
+.INDDesktop.INDkeyboard #INDshortcutMenu:focus:before {
+  content:              attr( data-indblocknav );
+  position:             absolute;
+  padding:              5px 10px;
+  background:           black;
+  color:                white;
+  line-height:          1;
+  font-family:          "Alef", Open Sans Hebrew, Arial, sans-serif;
+  font-size:            12px;
+  letter-spacing:       0.4px;
+  text-shadow:          #bbb 0px 0px 8px;
+  border-radius:        0 0 8px 8px;
+}
+.INDDesktop.INDkeyboard .INDblock:not(.INDdialog):not(#INDshortcutMenu):focus:before {
+  top:                  0;
+  right:                18px;
+}
+.INDDesktop.INDkeyboard #INDshortcutMenu:focus:before {
+  top:                  100%;
+  right:                3px;
+}
+.INDDesktop :not(.INDdialog)[data-indblocknav=""]:before {
+  padding:              0                  !important;
+}
+
+
+
+/* Readable font */
+html:not(#INDdummy) body:not(#INDdummy).INDreadable,
+html:not(#INDdummy) body:not(#INDdummy).INDreadable > :not(#INDWrap),
+html:not(#INDdummy) body:not(#INDdummy).INDreadable > :not(#INDWrap) * {
+  font-family:          Arial              !important;
+}
+
+
+/* Big cursor - White */
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor {
+  cursor:               url('https://access.nagich.co.il/assets/images/bigcursorwhite.cur'), auto !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor a,
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="link"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor area,
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor label,
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor audio,
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor video,
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor button,
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="button"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [type="button"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [type="submit"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [type="image"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="radio"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [type="radio"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="checkbox"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [type="checkbox"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor select,
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="combobox"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="option"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="slider"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="scrollbar"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="spinbutton"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhitecursor [role="tab"] {
+  cursor:               url('https://access.nagich.co.il/assets/images/bighandwhite.cur'), auto !important;
+}
+
+
+/* Big cursor - Black */
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor {
+  cursor:               url('https://access.nagich.co.il/assets/images/bigcursorblack.cur'), auto !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor a,
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="link"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor area,
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor label,
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor audio,
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor video,
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor button,
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="button"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [type="button"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [type="submit"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [type="image"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="radio"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [type="radio"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="checkbox"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [type="checkbox"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor select,
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="combobox"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="option"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="slider"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="scrollbar"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="spinbutton"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackcursor [role="tab"] {
+  cursor:               url('https://access.nagich.co.il/assets/images/bighandblack.cur'), auto !important;
+}
+
+
+
+/*
+ * Color Schemes
+ */
+
+/* Change color to white over black */
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap),
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) *:not(img) {
+  color:                White;
+  background-color:     Black;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite ::-webkit-input-placeholder {
+  color:                White              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite ::-moz-placeholder {
+  color:                White              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite :-moz-placeholder {
+  color:                White              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite :-ms-input-placeholder {
+  color:                White              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite :placeholder-shown {
+  background-color:     Black              !important;
+}
+
+/* Change color to black over white */
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap),
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) *:not(img) {
+  color:                Black;
+  background-color:     White;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack ::-webkit-input-placeholder {
+  color:                Black              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack ::-moz-placeholder {
+  color:                Black              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack :-moz-placeholder {
+  color:                Black              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack :-ms-input-placeholder {
+  color:                Black              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack :placeholder-shown {
+  background-color:     White              !important;
+}
+
+/* Links */
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > a,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) a {
+  outline:              1px dashed Gold;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > a,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) a {
+  outline:              1px dashed MidnightBlue;
+}
+
+/* Headers */
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > h1,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > h2,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > h3,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > h4,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > h5,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > h6,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > [role="heading"],
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) h1,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) h2,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) h3,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) h4,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) h5,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) h6,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) [role="heading"] {
+  color:                Gold;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > h1,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > h2,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > h3,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > h4,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > h5,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > h6,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > [role="heading"],
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) h1,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) h2,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) h3,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) h4,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) h5,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) h6,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) [role="heading"] {
+  color:                MidnightBlue;
+}
+
+/* focus on page */
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap):not([tabindex="-1"]):focus,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap):not([tabindex="-1"]):focus *,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) :not([tabindex="-1"]):focus,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) :not([tabindex="-1"]):focus *,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite a:hover,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite a:hover *,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) a:hover,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite > :not(#INDWrap) a:hover *,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap):not([tabindex="-1"]):focus,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap):not([tabindex="-1"]):focus *,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) :not([tabindex="-1"]):focus,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) :not([tabindex="-1"]):focus *,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack a:hover,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack a:hover *,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) a:hover,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack > :not(#INDWrap) a:hover * {
+  color:                Black;
+  fill:                 Black;
+  stroke:               Black;
+  background-color:     LemonChiffon;
+  font-weight:          bold;
+
+  -webkit-transition: color 0.3s ease-in, fill 0.3s ease-in;
+
+     -moz-transition: color 0.3s ease-in, fill 0.3s ease-in;
+
+      -ms-transition: color 0.3s ease-in, fill 0.3s ease-in;
+
+       -o-transition: color 0.3s ease-in, fill 0.3s ease-in;
+
+          transition: color 0.3s ease-in, fill 0.3s ease-in;
+
+
+  -webkit-filter: contrast(1);
+
+     -moz-filter: contrast(1);
+
+      -ms-filter: contrast(1);
+
+       -o-filter: contrast(1);
+
+          filter: contrast(1);
+
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite :focus::-webkit-input-placeholder,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack :focus::-webkit-input-placeholder {
+  color:                Black              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite :focus::-moz-placeholder,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack :focus::-moz-placeholder {
+  color:                Black              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite :focus:-moz-placeholder,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack :focus:-moz-placeholder {
+  color:                Black              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite :focus:-ms-input-placeholder,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack :focus:-ms-input-placeholder {
+  color:                Black              !important;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite :focus:placeholder-shown,
+html:not(#INDdummy) body:not(#INDdummy).INDwhiteblack :focus:placeholder-shown {
+  background-color:     LemonChiffon       !important;
+}
+
+/* accessibility menu focus fix */
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite #INDmenu button[aria-pressed="true"] span,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite #INDmenu button[aria-pressed="true"] svg *,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite #INDmenu button[aria-selected="true"] span,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite #INDmenu button[aria-selected="true"] svg * {
+  color:                #570000;
+  fill:                 #570000;
+  font-weight:          bold;
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite #INDmenu :focus,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite #INDmenu :focus * {
+  color:                Black;
+  fill:                 Black;
+  stroke:               Black;
+  background-color:     LemonChiffon;
+  font-weight:          bold;
+
+  -webkit-transition: color 0.3s ease-in, fill 0.3s ease-in, stroke 0.3s ease-in;
+
+     -moz-transition: color 0.3s ease-in, fill 0.3s ease-in, stroke 0.3s ease-in;
+
+      -ms-transition: color 0.3s ease-in, fill 0.3s ease-in, stroke 0.3s ease-in;
+
+       -o-transition: color 0.3s ease-in, fill 0.3s ease-in, stroke 0.3s ease-in;
+
+          transition: color 0.3s ease-in, fill 0.3s ease-in, stroke 0.3s ease-in;
+
+}
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite .INDmenuFooter :focus path,
+html:not(#INDdummy) body:not(#INDdummy).INDblackwhite .INDmenuFooter :focus polygon {
+  fill:                 White !important;
+}
+
+/* accessibility menu focus fix */
+html:not(#INDdummy) body.INDmonochrome > :not(#INDWrap) {
+
+  -webkit-filter: grayscale(1);
+
+     -moz-filter: grayscale(1);
+
+      -ms-filter: grayscale(1);
+
+       -o-filter: grayscale(1);
+
+          filter: grayscale(1);
+
+}
+html:not(#INDdummy) body.INDblackwhite > :not(#INDWrap) img {
+
+  -webkit-filter: invert(1);
+
+     -moz-filter: invert(1);
+
+      -ms-filter: invert(1);
+
+       -o-filter: invert(1);
+
+          filter: invert(1);
+
+}
+html:not(#INDdummy) body.INDwhiteblack > :not(#INDWrap) img {
+
+  -webkit-filter: contrast(1.5);
+
+     -moz-filter: contrast(1.5);
+
+      -ms-filter: contrast(1.5);
+
+       -o-filter: contrast(1.5);
+
+          filter: contrast(1.5);
+
+}
+
+/*
+ * /End Color Schemes
+ */
+
+
+
+/* Highlightning */
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > h1,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > h2,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > h3,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > h4,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > h5,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > h6,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > [role=heading],
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > :not(#INDWrap) h1,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > :not(#INDWrap) h2,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > :not(#INDWrap) h3,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > :not(#INDWrap) h4,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > :not(#INDWrap) h5,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > :not(#INDWrap) h6,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightHeaders > :not(#INDWrap) [role=heading],
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > h1,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > h2,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > h3,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > h4,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > h5,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > h6,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > [role=heading],
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > :not(#INDWrap) h1,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > :not(#INDWrap) h2,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > :not(#INDWrap) h3,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > :not(#INDWrap) h4,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > :not(#INDWrap) h5,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > :not(#INDWrap) h6,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > :not(#INDWrap) [role=heading] {
+  /*
+  outline:              2px dashed LightCoral;
+  */
+  font-weight:          bold;
+  border-bottom:        2px solid #222;
+}
+
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightLinks > a,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightLinks > [role=link],
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightLinks > :not(#INDWrap) a,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightLinks > :not(#INDWrap) [role=link],
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > a,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > [role=link],
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > :not(#INDWrap) a,
+html:not(#INDdummy) body:not(#INDdummy).INDhighlightAll > :not(#INDWrap) [role=link] {
+  color:                Red;
+  border-bottom:        2px solid red;
+  text-decoration:      none;
+}
+
+
+/* Highlightning - High Contrast Dark */
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > h1,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > h2,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > h3,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > h4,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > h5,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > h6,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > [role="heading"],
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h1,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h2,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h3,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h4,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h5,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h6,
+html:not(#INDdummy) body.INDhighlightHeaders.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) [role="heading"],
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > h1,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > h2,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > h3,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > h4,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > h5,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > h6,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > [role="heading"],
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h1,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h2,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h3,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h4,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h5,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) h6,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) [role="heading"] {
+  border-color:         White;
+}
+html:not(#INDdummy) body.INDhighlightLinks.INDblackwhite:not(#INDdummy) > a,
+html:not(#INDdummy) body.INDhighlightLinks.INDblackwhite:not(#INDdummy) > [role="link"],
+html:not(#INDdummy) body.INDhighlightLinks.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) a,
+html:not(#INDdummy) body.INDhighlightLinks.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) [role="link"],
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > a,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > [role="link"],
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) a,
+html:not(#INDdummy) body.INDhighlightAll.INDblackwhite:not(#INDdummy) > *:not(#INDWrap) [role="link"] {
+  color:                Gold;
+  border-color:         Gold;
+}
+
+/* Disable all CSS animations */
+html:not(#INDdummy) body:not(#INDdummy).INDepilepsy * {
+  transition:           none               !important;
+  animation:            none               !important;
+}
+
+
+
+/*
+ * Zoom
+ */
+
+@-moz-document url-prefix() {
+  html:not(#INDdummy) body.INDmagnifier > :not(#INDWrap) {
+    transform:        scale( 1.5 );
+    transform-origin: 100% 0;
+  }
+}
+html:not(#INDdummy) body > :not(#INDWrap) {
+  transition:           transform 0.6s, zoom 0.6s;
+}
+html:not(#INDdummy) body.INDmagnifier > :not(#INDWrap) {
+  zoom:                 1.5;
+}
+
+
+  
+  
+#INDFlyingFocus {
+  position:                           absolute;
+  visibility:                         hidden;
+  margin:                             0;
+  background-color:                   #ffffcc;
+  background-color:                   transparent;
+  -webkit-transition-property:        left, top, width, height;
+      transition-property:        left, top, width, height;
+  -webkit-transition-timing-function: cubic-bezier(0,1,0,1);
+      transition-timing-function: cubic-bezier(0,1,0,1);
+  pointer-events:                     none;
+  box-shadow:                         0 0 6px 3px #ffff00,
+                                0 0 2px #333 inset;
+  border-radius:                      5px;
+}
+#INDFlyingFocus.flyingfocus_visible {
+  visibility:                         visible;
+  z-index:                            2147483647;
+}
+#INDFlyingFocus.flyingfocus_fixed {
+  position:                           fixed;
+}
+:not(#INDdummy).flyingfocus_target {
+  border-radius:                      5px                           !important;
+  outline:                            none                          !important;
+  text-shadow:                        #bbb 1px 1px 1px;
+  transition:                         color       0.2s ease-in,
+                              text-shadow 0.2s ease-in;
+}
+:not(#INDdummy) area.flyingfocus_target {
+  outline:                            1px solid #ffff00 !important;
+}
+:not(#INDdummy).flyingfocus_target_style {
+  background-color:                   #ffffcc   !important;
+  color:                              #bf1722 !important;
+}
+:not(#INDdummy).flyingfocus_target_style * {
+  color:                              #bf1722 !important;
+  text-shadow:                        #bbb 1px 1px 1px;
+  transition:                         color       0.2s ease-in,
+                              text-shadow 0.2s ease-in;
+}
+:not(#INDdummy).flyingfocus_target_ring {
+  box-shadow:                         0 0 6px 3px #ffff00,
+                                0 0 2px #333 inset            !important;
+}
+:not(#INDdummy).flyingfocus_target_position {
+  position:                           relative !important;
+}
+:not(#INDdummy).flyingfocus_target_inline-block {
+  display:                            inline-block !important;
+}
+
+
+  
+
+    
